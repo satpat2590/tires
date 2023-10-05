@@ -1,0 +1,67 @@
+{/* Product Showcase */}
+<section className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  {Array(8).fill(null).map((_, index) => (
+    <div key={index} className="bg-white text-black p-6 rounded-lg shadow-lg">
+      <img src={`/path/to/tire-${index + 1}.jpg`} alt={`Tire ${index + 1}`} className="w-full h-48 object-cover mb-4 rounded" />
+      <h3 className="text-xl font-semibold">Tire {index + 1}</h3>
+      <p className="text-sm">Some description here.</p>
+    </div>
+  ))}
+</section>
+
+
+
+<div className="container mx-auto px-4">
+    {/* Header */}
+    <header className="flex justify-between items-center py-4 border-b">
+      {/* Logo and Company Name */}
+      <div className="flex items-center">
+        <img src="mlmtires.png" alt="MLM Tires" className="w-30 h-11 mr-2" />
+      </div>
+      
+      {/* Navigation */}
+      <nav>
+        <ul className="flex space-x-4">
+          <li><a href="#" className="text-lg">Home</a></li>
+          <li><a href="#" className="text-lg">Products</a></li>
+          <li><a href="#" className="text-lg">Services</a></li>
+          <li><a href="#" className="text-lg">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    {/* Main Content */}
+    <main className="py-8">
+
+    </main>
+    
+    {/* Footer */}
+    <footer className="py-4 border-t">
+      <p className="text-center text-sm">© 2023 TiresGalore. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+
+
+  {/* Full-width Background Image with Gradient Opacity */}
+  <section className="relative bg-cover bg-center h-[400px] w-screen" style={{ backgroundImage: `url('truckers.webp')` }}>
+    
+    {/* Opacity Gradient */}
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
+
+    {/* Centered Description */}
+    <div className="absolute inset-0 flex flex-col justify-center items-center">
+      <div className="text-center p-">
+        <h1 className="text-2xl font-semibold mb-2 text-white">Tires, Wheels, And More. We'll Help You Get There</h1>
+        <p className="mb-4 text-white">
+          Free shipping & quick delivery. Expert advice and easy tire selection tools.
+          Free tire Road Hazard Protection with roadside assistance.
+          Convenient installation options, including mobile install services that come to you.
+        </p>
+        
+        {/* Browse Tires Button */}
+        <button className="bg-blue-500 text-white rounded px-4 py-2">Browse Available Tires</button>
+      </div>
+    </div>
+
+  </section>
