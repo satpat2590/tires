@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Alternating } from './Alternating'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
       <header className="flex justify-between mx-5 px-4 items-center py-4 border-b">
         {/* Logo and Company Name */}
         <div className="flex items-center">
-          <img src="mlmtires.png" alt="MLM Tires" className="w-30 h-11 mr-2" />
+          <img src="mlmtires.png" alt="MLM Tires" className="w-40 h-15 mr-3" />
         </div>
         
         {/* Navigation */}
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
           <ul className="flex space-x-4">
             <li><a href="/" className="text-lg">Home</a></li>
             <li><a href="/products" className="text-lg">Products</a></li>
-            <li><a href="#" className="text-lg">Services</a></li>
+            <li><a href="#" className="text-lg">Returns</a></li>
             <li><a href="#" className="text-lg">Contact</a></li>
           </ul>
         </nav>

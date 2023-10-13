@@ -2,7 +2,7 @@ const Product = ({ id, image, name, price, priceCut }) => {
     return (
       <div className="bg-white text-black p-6 rounded-lg shadow-lg">
         {/* Product Image */}
-        <img src={image} alt={name} className="w-full h-48 object-cover mb-4 rounded" />
+        <img src={image} alt={name} className="w-full object-cover mb-4 rounded" />
   
         {/* Product Name */}
         <h3 className="text-xl font-semibold">{name}</h3>
@@ -16,6 +16,6 @@ const Product = ({ id, image, name, price, priceCut }) => {
         </div>
       </div>
     );
-  };
+};
   
-  export default Product;
+export default Product;

@@ -3,8 +3,8 @@ import Product from './Product';
 const ProductsPage = () => {
   // Sample data for products
   const products = [
-    { id: 1, image: '/tire1.jpg', name: 'Tire 1', price: 100, priceCut: 120 },
-    { id: 2, image: '/tire2.jpg', name: 'Tire 2', price: 150 },
+    { id: 1, image: 'firsttire.webp', name: 'Tire 1', price: 100, priceCut: 120 },
+    { id: 2, image: 'tiresecond.webp', name: 'Tire 2', price: 150 },
     // ... more products
   ];
 
