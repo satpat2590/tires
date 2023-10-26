@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+:root {
+    --primary-color: white; /* Customize as you like */
+}
+  
+body {
+    background-color: var(--primary-color);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.headroom {
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.445), 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.mb-12 {
+  margin-bottom: 5rem/* 48px */;
+}
+
+@media (min-width: 640px) {
+  .container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+      max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+      max-width: max-content;
+  }
+}
+
+.float-in-caption {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.visible-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.founders-gallery-title {
+  font-size: 2rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  padding: 0.5rem 1rem; 
+  margin: 1rem 0; 
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%); 
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .founders-gallery-title {
+    font-size: 3rem;
+  }
+}
+
+.restrict-footer {
+  height: 100px;
+  margin-top: 5rem;
+}

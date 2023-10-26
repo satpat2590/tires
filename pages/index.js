@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div id="landing-page" className="container opacity-0 w-screen">
       {/* Full-width Background Image with Opacity Gradient */}
-      <section className="relative bg-cover bg-center h-[300px] md:h-[400px] lg:h-[500px] w-screen" style={{ backgroundImage: `url('truckers.webp')` }}>
+      <section className="relative bg-cover bg-center h-[300px] md:h-[400px] lg:h-[500px] w-screen" style={{ backgroundImage: `url('dalletruck.png')` }}>
         
         {/* Opacity Gradient */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50"></div>
@@ -50,6 +50,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="w-full mx-auto my-8 text-center bg-white p-4"> 
+        <h1 className="founders-gallery-title">Founders' Gallery</h1>
+      </div>
       <Alternating />
     </div>
 
